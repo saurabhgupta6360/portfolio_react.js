@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  color: #444444;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-family: "Poppins", sans-serif;
+}
+
+.por-hero-screen {
+  background: #ffffff url(./components/images/banner.jpg) !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  top: -32px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-position: right top !important;
+}
+
+.break-words span {
+  color: #174ee2;
+}
+
+.norebro-bar {
+  background-color: rgba(255, 255, 255, 0.01);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.bar {
+  width: 76px;
+  height: 100%;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  z-index: 60;
+  -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.06);
+}
+
+.norebro-bar .content {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.bar .content {
+  width: 70vh;
+  padding-left: 5vh;
+  font-size: 0.75rem;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(-90deg);
+  -ms-transform: translateX(-50%) rotate(-90deg);
+  /* transform: translateX(-50%) rotate(-90deg); */
+}
+
+.norebro-bar .separator {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bar .separator {
+  background: #e0e0e0;
+  width: 60px;
+  height: 2px;
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  top: -3px;
+}
+
+.bar .separator:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 50%;
+  height: inherit;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .por-hero-screen {
+    background-position: left top !important;
+  }
+  .mob-bg {
+    background: rgba(40, 40, 40, 0.97);
+  }
+
+  .mob-bg li a {
+    color: #fff;
+  }
+  .bar {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .por-hero-screen {
+    background-position: left top !important;
+  }
+  .mob-bg {
+    background: rgba(40, 40, 40, 0.97);
+  }
+  .mob-bg li a {
+    color: #fff;
+  }
+  .bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .por-hero-screen {
+    background-position: left top !important;
+  }
+  .mob-bg {
+    background: rgba(40, 40, 40, 0.97);
+  }
+  .mob-bg li a {
+    color: #fff;
+  }
+
+  .por-hero-screen {
+    min-height: 75vh;
+  }
+  .bar {
+    display: none;
+  }
+}
